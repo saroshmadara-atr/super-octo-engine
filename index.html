@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Octo Engine</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #e2e8f0;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 2.5rem;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    .accent { color: var(--accent); }
+    p {
+      color: #94a3b8;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    button {
+      background: var(--accent);
+      color: #0f172a;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.1s ease, opacity 0.2s ease;
+    }
+    button:hover { opacity: 0.9; }
+    button:active { transform: scale(0.97); }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Welcome to <span class="accent">Super Octo Engine</span></h1>
+    <p>This is a basic HTML starter page. Edit <code>index.html</code> to make it your own.</p>
+    <button id="greet">Say Hello</button>
+    <footer>Built with plain HTML, CSS &amp; JavaScript</footer>
+  </main>
+
+  <script>
+    document.getElementById("greet").addEventListener("click", function () {
+      alert("Hello from Super Octo Engine! 🐙");
+    });
+  </script>
+</body>
+</html>
